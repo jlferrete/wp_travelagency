@@ -92,7 +92,13 @@ input:focus {
 \*------------------------------------*/
 
 
-/** GIRD */
+/** GRID */
+
+[class*='grid'] {
+    float: left;
+    position: relative;
+    padding: 10px;
+}
 
 .grid2-3 {
     width: 66.6%;
@@ -228,6 +234,35 @@ h1 {
 h1 span {
     padding: 0 25px;
     background-color: #ffffff;
+}
+
+
+/** EFECTO POLAROID */
+
+div.foto {
+    background-color: #ffffff;
+    display: block;
+    float: left;
+    width: auto;
+    margin: 0 00 27px 30px;
+    padding: 10px 10px 15px 10px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+}
+
+div.foto:nth-child(even) {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    margin-top: -70px;
+}
+
+.fotografia {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+    width: 100%;
+    height: auto;
 }
 
 

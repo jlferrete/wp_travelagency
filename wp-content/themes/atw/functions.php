@@ -5,6 +5,10 @@
  *  Custom functions, support, custom post types and more.
  */
 
+@ini_set( 'upload_max_size' , '12M' );
+@ini_set( 'post_max_size', '12M');
+@ini_set( 'max_execution_time', '300' );
+
 /*------------------------------------*\
 	External Modules/Files
 \*------------------------------------*/

@@ -1,0 +1,55 @@
+0000.030 (R) [notice] Looking for db archive: file name: backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-db.gz
+0000.031 (R) [notice] Archive is expected to be size: 158.9 KB: OK
+0000.032 (R) [notice] Looking for plugins archive: file name: backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-plugins.zip
+0000.033 (R) [notice] Archive is expected to be size: 10029.9 KB: OK
+0000.034 (R) [notice] Looking for themes archive: file name: backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-themes.zip
+0000.034 (R) [notice] Archive is expected to be size: 28057.4 KB: OK
+0000.035 (R) [notice] Looking for uploads archive: file name: backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-uploads.zip
+0000.035 (R) [notice] Archive is expected to be size: 1675 KB: OK
+0000.037 (R) [notice] Looking for others archive: file name: backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-others.zip
+0000.037 (R) [notice] Archive is expected to be size: 33466.4 KB: OK
+0000.038 (R) [notice] Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.040 (R) [notice] Unpacking backup... (backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-db.gz, 0.2 Mb)
+0000.042 (R) [notice] Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.062 (R) [notice] Activando el modo de mantenimiento&#8230;
+0000.063 (R) [notice] Backup of: http://travelagency.test
+0000.064 (R) [notice] Content URL: http://travelagency.test/wp-content
+0000.064 (R) [notice] Uploads URL: http://travelagency.test/wp-content/uploads
+0000.064 (R) [notice] Old table prefix: wp_
+0000.064 (R) [notice] Site information: multisite = 0
+0000.066 (R) [notice] New table prefix: wp_
+0000.071 (R) [notice] Processing table (InnoDB):  wp_options
+0000.176 (R) [notice] Processing table (InnoDB):  wp_users
+0000.194 (R) [notice] Processing table (InnoDB):  wp_usermeta
+0000.211 (R) [notice] Processing table (InnoDB):  wp_commentmeta
+0000.227 (R) [notice] Processing table (InnoDB):  wp_comments
+0000.244 (R) [notice] Processing table (InnoDB):  wp_links
+0000.260 (R) [notice] Processing table (InnoDB):  wp_postmeta
+0000.280 (R) [notice] Processing table (InnoDB):  wp_posts
+0000.300 (R) [notice] Processing table (InnoDB):  wp_term_relationships
+0000.316 (R) [notice] Processing table (InnoDB):  wp_term_taxonomy
+0000.332 (R) [notice] Processing table (InnoDB):  wp_termmeta
+0000.346 (R) [notice] Processing table (InnoDB):  wp_terms
+0000.362 (R) [notice] Desactivando el modo de mantenimiento&#8230;
+0000.362 (R) [notice] Finished: lines processed: 42 in 0.32 seconds
+0000.362 (R) [notice] Cleaning up rubbish...
+0000.367 (R) [notice] Unpacking backup... (backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-plugins.zip, 9.8 MB)
+0001.504 (R) [notice] Unzip progress: 1002 out of 1999 files (23.5 MB, plugins/updraftplus/languages/updraftplus-sk_SK.po)
+0001.938 (R) [notice] Unzip progress: 1999 out of 1999 files (31.6 MB, plugins/user-switching/user-switching.php)
+0001.940 (R) [notice] Moving old data out of the way...
+0002.027 (R) [notice] Moving unpacked backup into place...
+0002.136 (R) [notice] Cleaning up rubbish...
+0002.141 (R) [notice] Unpacking backup... (backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-themes.zip, 27.4 MB)
+0002.230 (R) [notice] Unzip progress: 110 out of 110 files (27.8 MB, themes/index.php)
+0002.231 (R) [notice] Moving old data out of the way...
+0002.247 (R) [notice] Moving unpacked backup into place...
+0002.254 (R) [notice] Cleaning up rubbish...
+0002.258 (R) [notice] Unpacking backup... (backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-uploads.zip, 1.6 MB)
+0002.329 (R) [notice] Unzip progress: 33 out of 33 files (1.6 MB, uploads/2019/09/destacada.jpg)
+0002.330 (R) [notice] Moving old data out of the way...
+0002.331 (R) [notice] Moving unpacked backup into place...
+0002.334 (R) [notice] Cleaning up rubbish...
+0002.337 (R) [notice] Unpacking backup... (backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-others.zip, 32.7 MB)
+0002.871 (R) [notice] Unzip progress: 995 out of 995 files (34.2 MB, languages/themes/twentysixteen-es_ES.po)
+0002.874 (R) [notice] Cleaning up rubbish...
+0002.886 (R) [notice] Restore successful!

@@ -1,0 +1,88 @@
+0000.005 () Opened log file at time: Mon, 25 Nov 2019 20:17:45 +0000 on http://travelagency.test
+0000.006 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.20 WP: 5.3 PHP: 7.3.8 (apache2handler, Windows NT DESKTOP-K3ITT2L 10.0 build 18362 (Windows 10) AMD64) MySQL: 10.4.6-MariaDB WPLANG: es_ES Server: Apache/2.4.39 (Win64) OpenSSL/1.1.1c PHP/7.3.8 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 30.9M | 2M) multisite: N openssl: OpenSSL 1.1.1c  28 May 2019 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.006 () Free space on disk containing Updraft's temporary directory: 742335.8 MB
+0000.003 () Opened log file at time: Mon, 25 Nov 2019 20:17:45 +0000 on http://travelagency.test
+0000.004 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.20 WP: 5.3 PHP: 7.3.8 (apache2handler, Windows NT DESKTOP-K3ITT2L 10.0 build 18362 (Windows 10) AMD64) MySQL: 10.4.6-MariaDB WPLANG: es_ES Server: Apache/2.4.39 (Win64) OpenSSL/1.1.1c PHP/7.3.8 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 29.1M | 24M) multisite: N openssl: OpenSSL 1.1.1c  28 May 2019 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.004 () Free space on disk containing Updraft's temporary directory: 742335.8 MB
+0000.015 () Ensuring WP_Filesystem is setup for a restore
+0000.016 () WP_Filesystem is setup and ready for a restore
+0000.030 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.038 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.040 () Entity: db
+0000.040 () restore_backup(backup_file=backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-db.gz, type=db, info=a:0:{}, last_one=)
+0000.040 () PHP event: code E_NOTICE: Undefined index: path (line 1403, D:\workspace-2019\wp-travelagency\wp-content\plugins\updraftplus\restorer.php)
+0000.040 () Unpacking backup... (backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-db.gz, 0.2 Mb)
+0000.041 () Database successfully unpacked
+0000.042 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.042 () Using direct MySQL access; value of use_mysqli is: 1
+0000.043 () SQL compatibility mode is: NO_ZERO_IN_DATE,NO_ENGINE_SUBSTITUTION
+0000.062 () Tried to raise max_allowed_packet from 1 MB to 32 MB, but failed (Access denied; you need (at least one of) the SUPER privilege(s) for this operation, b:0;)
+0000.062 () Max packet size: 1 MB
+0000.062 () Entering maintenance mode
+0000.062 () Activando el modo de mantenimiento&#8230;
+0000.063 () Backup of: http://travelagency.test
+0000.064 () Content URL: http://travelagency.test/wp-content
+0000.064 () Uploads URL: http://travelagency.test/wp-content/uploads
+0000.064 () Old table prefix: wp_
+0000.064 () Site information: multisite=0
+0000.066 () New table prefix: wp_
+0000.071 () Processing table (InnoDB): wp_options
+0000.167 () Restoring prior UD configuration (table: wp_options; keys: 4)
+0000.176 () Processing table (InnoDB): wp_users
+0000.194 () Processing table (InnoDB): wp_usermeta
+0000.211 () Processing table (InnoDB): wp_commentmeta
+0000.227 () Processing table (InnoDB): wp_comments
+0000.244 () Processing table (InnoDB): wp_links
+0000.260 () Processing table (InnoDB): wp_postmeta
+0000.280 () Processing table (InnoDB): wp_posts
+0000.300 () Processing table (InnoDB): wp_term_relationships
+0000.316 () Processing table (InnoDB): wp_term_taxonomy
+0000.332 () Processing table (InnoDB): wp_termmeta
+0000.346 () Processing table (InnoDB): wp_terms
+0000.362 () Unlocking database and leaving maintenance mode
+0000.362 () Desactivando el modo de mantenimiento&#8230;
+0000.362 () Finished: lines processed: 42 in 0.32 seconds
+0000.362 () Cleaning up rubbish...
+0000.367 () Entity: plugins
+0000.367 () restore_backup(backup_file=backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-plugins.zip, type=plugins, info=a:2:{s:4:"path";s:52:"D:\workspace-2019\wp-travelagency/wp-content/plugins";s:11:"description";s:7:"Plugins";}, last_one=)
+0000.367 () Unpacking backup... (backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-plugins.zip, 9.8 MB)
+0000.368 () Unzipping backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-plugins.zip to D:/workspace-2019/wp-travelagency/wp-content/upgrade/5108e4fe/ using UpdraftPlus_ZipArchive, starting index 0
+0001.504 () Unzip progress: 1002 out of 1999 files (23.5 MB, plugins/updraftplus/languages/updraftplus-sk_SK.po)
+0001.938 () Unzip progress: 1999 out of 1999 files (31.6 MB, plugins/user-switching/user-switching.php)
+0001.939 () Moving old data: filesystem method / updraft_dir is potentially possible
+0001.940 () Moving old data: can potentially use wp_filesystem method / -old
+0001.940 () Moving old data out of the way...
+0002.025 () Top-level entities being moved: index.php, updraftplus
+0002.027 () Moving unpacked backup into place...
+0002.130 () Top-level entities being moved: advanced-custom-fields, classic-editor, debug-bar, debug-bar-console, debug-bar-extender, developer, index.php, regenerate-thumbnails, simply-show-ids, updraftplus, user-switching
+0002.136 () Cleaning up rubbish...
+0002.140 () Entity: themes
+0002.140 () restore_backup(backup_file=backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-themes.zip, type=themes, info=a:2:{s:4:"path";s:51:"D:\workspace-2019\wp-travelagency/wp-content/themes";s:11:"description";s:6:"Themes";}, last_one=)
+0002.141 () Unpacking backup... (backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-themes.zip, 27.4 MB)
+0002.141 () Unzipping backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-themes.zip to D:/workspace-2019/wp-travelagency/wp-content/upgrade/8bdf07cc/ using UpdraftPlus_ZipArchive, starting index 0
+0002.230 () Unzip progress: 110 out of 110 files (27.8 MB, themes/index.php)
+0002.230 () Moving old data: filesystem method / updraft_dir is potentially possible
+0002.231 () Moving old data: can potentially use wp_filesystem method / -old
+0002.231 () Moving old data out of the way...
+0002.245 () Top-level entities being moved: index.php, twentynineteen, twentyseventeen, twentytwenty
+0002.247 () Moving unpacked backup into place...
+0002.253 () Top-level entities being moved: atw, index.php
+0002.254 () Cleaning up rubbish...
+0002.257 () Entity: uploads
+0002.257 () restore_backup(backup_file=backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:52:"D:\workspace-2019\wp-travelagency/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0002.258 () Unpacking backup... (backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-uploads.zip, 1.6 MB)
+0002.258 () Unzipping backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-uploads.zip to D:/workspace-2019/wp-travelagency/wp-content/upgrade/216d2f7d/ using UpdraftPlus_ZipArchive, starting index 0
+0002.330 () Unzip progress: 33 out of 33 files (1.6 MB, uploads/2019/09/destacada.jpg)
+0002.330 () Moving old data: filesystem method / updraft_dir is potentially possible
+0002.330 () Moving old data: can potentially use wp_filesystem method / -old
+0002.330 () Moving old data out of the way...
+0002.331 () Moving unpacked backup into place...
+0002.334 () Cleaning up rubbish...
+0002.337 () Entity: others
+0002.337 () restore_backup(backup_file=backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-others.zip, type=others, info=a:2:{s:4:"path";s:44:"D:\workspace-2019\wp-travelagency/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0002.337 () Unpacking backup... (backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-others.zip, 32.7 MB)
+0002.338 () Unzipping backup_2019-11-25-1942_Travel_Agency_65fcebe71d1d-others.zip to D:/workspace-2019/wp-travelagency/wp-content/upgrade/842ef495/ using UpdraftPlus_ZipArchive, starting index 0
+0002.871 () Unzip progress: 995 out of 995 files (34.2 MB, languages/themes/twentysixteen-es_ES.po)
+0002.874 () Cleaning up rubbish...
+0002.886 () Restore successful!
+0002.887 () Restore successful

@@ -14,6 +14,9 @@
  * @package WordPress
  */
 
+ 
+define('WP_MEMORY_LIMIT', '128M');
+
 // ** Ajustes de MySQL. Solicita estos datos a tu proveedor de alojamiento web. ** //
 /** El nombre de tu base de datos de WordPress */
 define( 'DB_NAME', 'wp_travelagency' );

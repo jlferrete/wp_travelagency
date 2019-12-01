@@ -1,6 +1,6 @@
 <?php
 /*
- *  Author: JlFerrete | @JlFerrete
+ *  Author: Todd Motto | @toddmotto
  *  
  *  Custom functions, support, custom post types and more.
  */
@@ -8,13 +8,14 @@
 @ini_set( 'upload_max_size' , '12M' );
 @ini_set( 'post_max_size', '12M');
 @ini_set( 'max_execution_time', '300' );
-
 /*------------------------------------*\
 	External Modules/Files
 \*------------------------------------*/
 if ( !is_admin() ) {
     include 'kint.phar';
 }
+
+// Load any external files you have here
 
 /*------------------------------------*\
 	Theme Support
@@ -32,9 +33,9 @@ if (function_exists('add_theme_support'))
 
     // Add Thumbnail Theme Support
     add_theme_support('post-thumbnails');
-    add_image_size('mediano', 350, 250, true); // Large Thumbnail
-    add_image_size('toursDestacado', 523, 294, true); // TourDestacado
-    
+    add_image_size('mediano', 350, 250, true); // Mediano
+    add_image_size('toursDestacado', 523, 294, true); //toursdestacado
+    add_image_size('toursPrincipal', 751, 422, true);
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     /*add_theme_support('custom-background', array(
@@ -261,7 +262,7 @@ function html5_blank_view_article($more)
 // Remove Admin bar
 function remove_admin_bar()
 {
-    return false;
+    return true;
 }
 
 // Remove 'text/css' from our enqueued stylesheet
@@ -422,7 +423,7 @@ function create_post_type_html5()
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
-        'has_archive' => true,
+        'has_archive' => false,
         'menu_position' => 6,
         'supports' => array(
             'title',

@@ -12,48 +12,64 @@
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-			<?php $args = array(
-				'post_type' => 'tours',
-				'posts_per_page' => 4,
-				'order' => 'ASC',
-				'orderby' => 'title'
+		<?php $args = array(
+			'post_type' => 'tours',
+			'posts_per_page' => 4,
+			'order' => 'DESC',
+			'orderby' => 'date',
 
-			); ?>
+		); ?>
 
-			<?php $tours = new WP_Query($args); ?>
-			<?php while($tours->have_posts() ): $tours->the_post(); ?>
+		<?php $tours = new WP_Query($args); ?>
+		<?php while($tours->have_posts() ): $tours->the_post(); ?>
 
-				<!-- article -->
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<!-- article -->
+			<article id="post-<?php the_ID(); ?>" <?php post_class('grid2-4'); ?>>
 
-				<?php the_post_thumbnail('toursDestacado'); ?>
-
+				<div class="imagen-destacada">
+					<?php the_post_thumbnail('toursDestacado'); ?>
+					<a class="mas-info"  href="<?php the_permalink(); ?>">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masinfo.png">
+					</a>
+				</div> <!--.imagen-destacada-->
+				
 				<a href="<?php the_permalink(); ?>">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/masinfo.png">
-				</a>
-							
-				<h2>
-				<a href="<?php the_permalink(); ?>">
-					<?php the_title(); ?></h2>
+					<h2><?php the_title(); ?></h2>
 				</a>
 
 				<?php 
 					$formato = 'd F, Y';
 					$fecha = strtotime(get_field('fecha_de_salida'));
-					$fecha_salida= date_i18n($formato, $fecha);
-					$fecha_retorno = strtotime(get_field('fecha_de_retorno'));
-					$fecha_retorno= date_i18n($formato, $fecha);
+					$fechasalida = date_i18n($formato, $fecha);
+
+					$fechaRetorno = strtotime(get_field('fecha_de_retorno'));
+					$fechaRetorno = date_i18n($formato, $fechaRetorno);
+
 				?>
 
-				<p class="fecha"><?php echo $fecha_salida; ?> - <?php echo $fecha_retorno; ?> </p>
-				<p class="precio"><?php the_field('precio'); ?> </p>
-				<p><?php the_field('descripcion_corta')  ?></p>
+				<div class="fecha-precio clear">
+					<p class="fecha"><?php echo $fechasalida; ?> - <?php echo $fechaRetorno; ?></p>
+					<p class="precio"><?php the_field('precio'); ?></p>
 
-				</article>
-				<!-- /article -->
+				</div>
+				<div class="clear"></div>
 
-			<?php endwhile; wp_reset_postdata(); ?>
-		
+				<p><?php the_field('descripcion_corta'); ?></p>
+
+	
+			</article>
+			<!-- /article -->
+			
+
+			<?php endwhile;
+ html5wp_pagination(); 
+			 wp_reset_postdata(); ?>
+
+
+
+			</div>
+
+	
 		<?php endwhile; ?>
 
 		<?php else: ?>

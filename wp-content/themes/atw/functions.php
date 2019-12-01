@@ -1,6 +1,6 @@
 <?php
 /*
- *  Author: Todd Motto | @toddmotto
+ *  Author: JlFerrete | @Jlferrete
  *  
  *  Custom functions, support, custom post types and more.
  */

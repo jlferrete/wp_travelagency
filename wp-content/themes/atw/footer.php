@@ -1,33 +1,33 @@
-		</div>
-		<!-- /wrapper -->	
-			
+			</div>
+			<!-- /wrapper -->
+
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
 
 				<div class="widgets wrapper clear">
 
 					<div class="columna3">
-						<h2>Sobre Nosotros</h2>
+						<h3>Sobre Nosotros</h3>
 					</div>
 					<div class="columna3">
-						<h2>Próximos Viajes</h2>
+						<h3>Próximos Viajes</h3>
 					</div>
 					<div class="columna3">
-						<h2>Últimos Consejos</h2>
+						<h3>Últimos Consejos</h3>
 					</div>
-					
 					<div class="columna3">
-					</div>
 						
+					</div>
+
 				</div>
-				
-				
-				
+
+
+
 				<div class="clear"></div>
-						
+
 				<!-- copyright -->
 				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Derechos reservados <?php bloginfo('name'); ?>.
+					&copy; <?php echo date('Y'); ?> Derechos reservados <?php bloginfo('name'); ?> 
 				</p>
 				<!-- /copyright -->
 

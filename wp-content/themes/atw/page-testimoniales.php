@@ -15,14 +15,43 @@
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class('grid2-3'); ?>>
 
-				<?php the_content(); ?>
-			
-				<br class="clear">
 
-				<?php edit_post_link(); ?>
+
+			<?php the_content(); ?>
+	
+
+
+
+					<?php $args = array(
+						'post_type' => 'testimoniales',
+						'posts_per_page' => -1,
+						'order' => 'DESC',
+						'orderby' => 'date',
+					); ?>
+					<?php $testimoniales = new WP_Query($args); ?>
+					<?php while ($testimoniales->have_posts() ): $testimoniales->the_post(); ?>
+
+					<article class="testimonial">
+						<h2><?php the_title(); ?></h2>
+						<blockquote><p><?php echo get_the_content(); ?></p></blockquote>
+						<p class="testimonial"><?php the_field('nombre'); ?></p>
+						<p class="testimonial"><?php the_field('ciudad'); ?></p>
+					</article>
+
+
+					<?php endwhile; wp_reset_postdata(); ?>
 
 			</article>
 			<!-- /article -->
+
+				<br class="clear">
+
+
+
+	
+
+		<?php edit_post_link(); ?>
+
 
 		<?php endwhile; ?>
 

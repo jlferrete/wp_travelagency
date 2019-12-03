@@ -12,10 +12,27 @@
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
+            <?php $args = array(
+                'post_type' => 'post',
+                'post_per_page' => 1,
+                'orderby' => 'date',
+                'order' => 'DESC',           
+            ); ?>
 
-        <br class="clear">
+            <?php $ultima = new WP_Query($args); ?>
+            <?php while($ultima->have_posts() ): $ultima->the_post(); ?>
 
-		<?php edit_post_link(); ?>
+            <article class="entrada">
+                <div class="foto">
+                    <?php the_post_thumbnail(); ?>
+                </div>
+            </article>
+
+            <?php endwhile; wp_reset_postdata(); ?>
+
+
+        <?php edit_post_link(); ?>
+
 	
 		<?php endwhile; ?>
 
